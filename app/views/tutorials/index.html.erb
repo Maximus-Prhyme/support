@@ -15,13 +15,13 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-  <% @tutorials.each do |tutorial| %>
+<% @tutorials.each do |tutorial| %>
     <div class="item active">
-      <%= tutorial.name %>
-      <%= image_tag tutorial.picture.url %>
+      <%= tutorial.step %>
     </div>
+<% end %>
 
-
+<% @tutorials.each do |tutorial| %>
     <div class="item">
       <%= tutorial.name %>
       <%= image_tag tutorial.picture.url %>
