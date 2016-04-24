@@ -1,14 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-
-
-
-
-
-
-
-
-
 <p>
   <strong>Name:</strong>
   <%= @tutorial.name %>
@@ -27,4 +18,4 @@
 </p>
 
 <%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
-<%= link_to 'Back', tutorials_path %>
+<%= link_to 'Back', edit_project_path(@project.id) %>

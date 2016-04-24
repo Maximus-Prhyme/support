@@ -15,6 +15,11 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+  <% @project.tutorials do |tutorial| %>
+    <%= project.tutorial.step %>
+  <%end%>
+   <%= render :partial => '/tutorials/form', :tutorial => @project.tutorials.build %>
+
   <div class="actions">
     <%= f.submit %>
   </div>
