@@ -4,4 +4,6 @@ class Tutorial < ActiveRecord::Base
   validates_attachment_content_type :picture,
                                     :content_type => /^image\/(png|gif|jpeg)/,
                                     :message => 'only (png/gif/jpeg) images'
+
+  @tutorial = Tutorial.create(project_id: @project.id)
 end

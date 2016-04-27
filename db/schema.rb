@@ -11,16 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160424195221) do
+ActiveRecord::Schema.define(version: 20160425140524) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "projects", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "tutorials_id"
   end
+
+  add_index "projects", ["tutorials_id"], name: "index_projects_on_tutorials_id", using: :btree
 
   create_table "tutorials", force: :cascade do |t|
     t.string   "name"
@@ -32,6 +35,9 @@ ActiveRecord::Schema.define(version: 20160424195221) do
     t.string   "picture_content_type"
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
+    t.integer  "projects_id"
   end
+
+  add_index "tutorials", ["projects_id"], name: "index_tutorials_on_projects_id", using: :btree
 
 end
