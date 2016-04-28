@@ -18,12 +18,9 @@ ActiveRecord::Schema.define(version: 20160425140524) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.integer  "tutorials_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
-
-  add_index "projects", ["tutorials_id"], name: "index_projects_on_tutorials_id", using: :btree
 
   create_table "tutorials", force: :cascade do |t|
     t.string   "name"
@@ -35,9 +32,9 @@ ActiveRecord::Schema.define(version: 20160425140524) do
     t.string   "picture_content_type"
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
-    t.integer  "projects_id"
+    t.integer  "project_id"
   end
 
-  add_index "tutorials", ["projects_id"], name: "index_tutorials_on_projects_id", using: :btree
+  add_index "tutorials", ["project_id"], name: "index_tutorials_on_project_id", using: :btree
 
 end

@@ -5,5 +5,17 @@
   <%= @project.name %>
 </p>
 
+<div>
+  <%= render @project.tutorials %>
+  <div id="form">
+    <%= render "tutorials/form" %>
+  </div>
+
+  <% @project.tutorials.each do |tutorial| %>
+      <%= tutorial.step %>
+<% end %>
+</div>
+
 <%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Delete', project_path(@project), method: :delete, data: { confirm: "Iz u sho?" } %> |
 <%= link_to 'Back', projects_path %>

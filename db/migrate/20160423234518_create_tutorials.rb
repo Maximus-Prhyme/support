@@ -4,6 +4,7 @@ class CreateTutorials < ActiveRecord::Migration
       t.string :name
       t.text :description
       t.string :step
+      t.references :project, index: true
 
       t.timestamps null: false
     end
