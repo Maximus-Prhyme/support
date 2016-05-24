@@ -2,6 +2,7 @@ class TutorialsController < ApplicationController
   before_action :set_project
   before_action :set_tutorial, except: [:create]
 
+
   # GET /tutorials
   # GET /tutorials.json
   def index
