@@ -1,7 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Tutorials</h1>
-
 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
@@ -27,7 +25,7 @@
     <div class="item">
       <div class="carousel-caption" id="tutname"> <%= tutorial.name %></div>
       <div class="carousel-caption" id="tutdesc"><%= tutorial.description %> </div>
-      <%= image_tag tutorial.picture.url %>
+      <%= image_tag tutorial.picture.url(:large) %>
     </div>
     <%end%>
 
