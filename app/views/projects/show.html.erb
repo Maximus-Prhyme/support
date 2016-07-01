@@ -16,7 +16,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
 <%# @project.tutorials.each do |tutorial| %>
-    <div class="item active">
+    <div class="item active" id="prodname">
       <%= @project.name %>
       <%# image_tag tutorial.picture.url %>
       <%# tutorial.description %>
@@ -25,7 +25,8 @@
 
 <% @project.tutorials.each do |tutorial| %>
     <div class="item">
-      <%= tutorial.name %>
+      <div class="carousel-caption" id="tutname"> <%= tutorial.name %></div>
+      <div class="carousel-caption" id="tutdesc"><%= tutorial.description %> </div>
       <%= image_tag tutorial.picture.url %>
     </div>
     <%end%>
