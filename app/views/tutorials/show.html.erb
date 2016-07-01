@@ -13,6 +13,8 @@
   <strong>Step:</strong>
   <%= @tutorial.step %>
 </p>
-
-<%= link_to 'Edit', edit_tutorial_path(@tutorial) %> |
+<% if tech_signed_in? %>
+<%= link_to 'Edit', edit_tutorial_path(@tutorial) %>
+<%end%>
+ |
 <%= link_to 'Back', tutorials_path %>
