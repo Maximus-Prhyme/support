@@ -15,8 +15,10 @@
 </head>
 <body>
 
-<<<<<<< HEAD
-<nav class="navbar navbar-fixed-top">  <p class="navbar-text pull-right">
+<nav class="navbar navbar-fixed-top">
+<%= link_to image_tag("biotrackthc.png", :class => "navbar-brand"), "/" %>
+<p class="navbar-text pull-right">
+
     <% if tech_signed_in? %>
       Logged in as <strong><%= current_tech.email %></strong>.
       <%= link_to 'Edit profile', edit_tech_registration_path, :class => 'navbar-link' %> |
@@ -28,20 +30,6 @@
     <% end %>
   </p>
 </nav>
-=======
-<%= link_to image_tag("biotrackthc.png", :class => "navbar-brand"), "/" %>
-
-<p class="navbar-text pull-right">
-<% if tech_signed_in? %>
-  Logged in as <strong><%= current_tech.email %></strong>.
-  <%= link_to 'Edit profile', edit_tech_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_tech_session_path, method: :delete, :class => 'navbar-link'  %>
-<% else %>
-  <%= link_to "Sign up", new_tech_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_tech_session_path, :class => 'navbar-link'  %> |
-<!--   <%# link_to "Contact Support", contact_us_path, :class => 'navbar-link' %> -->
-<% end %>
->>>>>>> b539beab63ed787f636ae5452925ec4083a5f4d9
 
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>

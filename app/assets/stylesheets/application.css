@@ -13,6 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+
+
+.projecth1{
+  background-color: rgba(255,255,255,.4);
+}
+.projecth1:hover{
+  color:white;
+}
+
+ body{
+  background-image: url("weed.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  min-height: 100%;
+ }
 .carousel-control:hover{
   background-color: rgba(0,0,0,0);
 }
@@ -20,29 +38,49 @@
 .navbar-brand{
   width: 10%;
   height: auto;
+  margin-right: -5%;
 }
 
 #tutname{
   text-align: center;
-  margin-bottom:35%;
+  margin-bottom:42%;
   font-size: 2em;
   background-color: rgba(100,100,100,.4);
+  word-wrap: normal;
+  overflow: scroll;
 }
+
+.carousel-inner > .item {
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+    }
 
 #tutdesc{
   background-color: rgba(100,100,100,.4);
+  word-wrap: normal;
+  overflow: scroll;
 }
 
 #prodname{
   font-size: 5em;
   text-align: center;
+<<<<<<< HEAD
   padding-bottom: 44%;
+}
+
+.navbar{
+  background-color: rgba(255,255,255,.8);
 }
 
 h1 {
   text-align: center;
 }
+=======
+  padding-bottom: 35%;
+}
 .navbar-text{
   padding-top: -5%;
 }
-
+>>>>>>> ee3d1b6a60b40e80638304b37e7463afbb53f4bd
