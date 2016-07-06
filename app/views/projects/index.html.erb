@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="projecth1">Listing Projects</h1>
+<h1 class="projecth1 col-sm-4 col-sm-offset-4">Listing Projects</h1>
 
 <table class="table table-striped">
   <thead>
@@ -32,5 +32,5 @@
 
 <br>
 <% if tech_signed_in? %>
-<%= link_to 'New Project', new_project_path, :class=> "projecth1" %>
+<%= link_to 'New Project', new_project_path, :class=> "btn newprod" %>
 <%end%>

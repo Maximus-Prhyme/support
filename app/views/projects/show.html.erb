@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<div class="container">
+<div class="container prodshow">
     <div class="row">
         <div class="col-sm-12">
 
@@ -52,7 +52,7 @@
   </a>
   </div>
     <% if tech_signed_in? %>
-    <%= link_to 'Add Slide', edit_project_path %>
+    <%= link_to 'Add Slide', edit_project_path, :class=> 'newprod btn'%>
     <%end%>
     <br>
   </div>

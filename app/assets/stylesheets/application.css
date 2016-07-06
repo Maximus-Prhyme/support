@@ -15,16 +15,20 @@
  */
 
 
-
+.newprod{
+  background-color: rgba(255,255,255,1);
+}
+ .newprod:hover{
+  background-color:yellow;
+ }
 
 
 .projecth1{
-  background-color: rgba(255,255,255,.4);
+  background-color: rgba(255,255,255,.5);
 }
-.projecth1:hover{
-  color:white;
+.prodshow{
+  background-color: rgba(255,255,255,.3);
 }
-
  body{
   background-image: url("weed.jpg");
   background-attachment: fixed;
@@ -66,7 +70,6 @@
 #prodname{
   font-size: 5em;
   text-align: center;
-<<<<<<< HEAD
   padding-bottom: 44%;
 }
 
@@ -77,10 +80,6 @@
 h1 {
   text-align: center;
 }
-=======
-  padding-bottom: 35%;
-}
 .navbar-text{
   padding-top: -5%;
 }
->>>>>>> ee3d1b6a60b40e80638304b37e7463afbb53f4bd

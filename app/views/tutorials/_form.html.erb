@@ -1,3 +1,4 @@
+<div class="projecth1">
 <%= form_for([@project, @project.tutorials.build]) do |f| %>
   <%# if @tutorial.errors.any? %>
     <!-- <div id="error_explanation"> -->
@@ -27,7 +28,8 @@
     <%= f.label :step %><br>
     <%= f.text_field :step %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div>
+    <%= f.submit :class=>"newprod btn" %>
   </div>
 <% end %>
+</div>
