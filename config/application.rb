@@ -24,3 +24,10 @@ module Biotrack
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
+
+Rails.application.config.assets.precompile += %w( application.css )
+Rails.application.config.assets.precompile += %w( bootstrap.css )
+Rails.application.config.assets.precompile += %w( bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( bootstrap.js )
+Rails.application.config.assets.precompile += %w( bootstrap.min.js )
+Rails.application.config.assets.precompile += %w( jquery.js )
