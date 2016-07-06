@@ -15,6 +15,8 @@
 </head>
 <body>
 
+<%= link_to image_tag("biotrackthc.png", :class => "navbar-brand"), "/" %>
+
 <p class="navbar-text pull-right">
 <% if tech_signed_in? %>
   Logged in as <strong><%= current_tech.email %></strong>.
