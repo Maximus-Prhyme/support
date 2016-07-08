@@ -8,6 +8,9 @@ gem 'pg', '~> 0.15'
 gem 'paperclip'
 gem 'better_errors'
 gem 'devise'
+gem 'carrierwave'
+gem 'fog'
+gem 'fog-aws'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
