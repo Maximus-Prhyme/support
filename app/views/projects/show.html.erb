@@ -27,7 +27,7 @@
     <div class="item">
       <div class="carousel-caption" id="tutname"> <%= tutorial.name %></div>
       <div class="carousel-caption" id="tutdesc"><%= tutorial.description %> </div>
-      <%= image_tag tutorial.picture.url %>
+      <%= image_tag tutorial.picture.url(:large) %>
     </div>
     <%end%>
 
