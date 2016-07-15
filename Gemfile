@@ -12,6 +12,7 @@ gem 'carrierwave'
 gem 'fog'
 gem 'fog-aws'
 gem 'mini_magick'
+gem 'figaro'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
