@@ -54,6 +54,7 @@
 #tutname{
   text-align: center;
   margin-bottom:42%;
+  margin-top: auto;
   font-size: 2em;
   word-wrap: normal;
   overflow: scroll;
