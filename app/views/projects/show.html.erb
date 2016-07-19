@@ -25,8 +25,7 @@
 
 <% @project.tutorials.each do |tutorial| %>
     <div class="item">
-      <div class="carousel-caption" id="tutname"> <%= tutorial.name %></div>
-      <div class="carousel-caption" id="tutdesc"><%= tutorial.description %> </div>
+      <div class="carousel-caption" id="tutdesc">Step: <%= tutorial.name %> <br> Description: <%= tutorial.description %> </div>
       <%= image_tag tutorial.picture.url(:large), :class => 'pic' %>
     </div>
     <%end%>
