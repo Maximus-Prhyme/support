@@ -6,6 +6,7 @@ gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
 gem 'paperclip'
+gem 'dotenv-rails'
 gem 'better_errors'
 gem 'devise'
 gem 'carrierwave'

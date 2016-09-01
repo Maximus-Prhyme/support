@@ -17,7 +17,8 @@
   <div class="carousel-inner" role="listbox">
 <%# @project.tutorials.each do |tutorial| %>
     <div class="item active" id="prodname">
-      <%= @project.name %>
+      <%= @project.name.upcase %>
+      <%# image_tag "jpgbkground.jpg", :class => 'btpic' %>
       <%# image_tag tutorial.picture.url %>
       <%# tutorial.description %>
     </div>
@@ -25,7 +26,7 @@
 
 <% @project.tutorials.each do |tutorial| %>
     <div class="item">
-      <div class="carousel-caption" id="tutdesc">STEP:::: <%= tutorial.name %> <br> DESCRIPTION:::: <%= tutorial.description %> </div>
+      <div class="carousel-caption" id="tutdesc"> DESCRIPTION: <%= tutorial.description.capitalize %> </div>
       <%= image_tag tutorial.picture.url(:large), :class => 'pic' %>
     </div>
     <%end%>
@@ -50,9 +51,16 @@
     <span class="sr-only">Next</span>
   </a>
   </div>
-    <% if tech_signed_in? %>
-    <%= link_to 'Add Slide', edit_project_path, :class=> 'newprod btn'%>
+
+
+<% if tech_signed_in? %>
+  <%= link_to 'Add Slide', edit_project_path, :class=> 'newprod btn'%><br><br>
+
+  <% @project.tutorials.each do |tutorial|%>
+      <%= tutorial.name %>
+      <%= link_to "Delete", project_tutorial_path(@project, tutorial.id), method: :delete, data:{confirm: "Are you sure?"}, :class=> 'newprod btn' %>
     <%end%>
+<%end%>
     <br>
   </div>
 </div>

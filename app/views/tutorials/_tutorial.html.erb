@@ -1,6 +1,9 @@
-<p> <%= tutorial.name %></p>
+<p>
+<% @tutorials.each do |tutorial| %>
+<%= tutorial.name %></p>
 <%= link_to "Delete", project_tutorial_path(@project, tutorial.id), method: :delete, data:{confirm: "Iz u shoo?"}, :class=> 'newprod btn' %>
 
 <p>
   <%= image_tag tutorial.picture.url %>
 </p>
+<% end %>

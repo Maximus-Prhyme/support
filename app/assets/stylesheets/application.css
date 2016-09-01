@@ -13,31 +13,72 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url(https://fonts.googleapis.com/css?family=Lato);
+
+ *{
+  font-family: 'Lato'
+ }
 .carousel-caption{
   background-color: rgba(0,0,0,.7);
-
 }
-.pic{
+
+.signup{
+  text-align: center;
+  background-color: rgba(255,255,255,.8);
+  width: 50%;
+  border-radius: 50px;
   margin:auto;
+}
+
+thead{
+  background-color: #669933;
+  color:white;
+  font-size: 1.5em;
+  border-radius: 25%;
+}
+
+th{
+  border-radius: 10%;
+}
+
+.btpic{
+  height: 50%;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
 
 .newprod{
   background-color: rgba(255,255,255,1);
 }
- .newprod:hover{
-  background-color:yellow;
+
+
+.newprod:hover{
+  background-color:#0099ff;
+  color:white;
+}
+
+ .projname{
+  text-align: center;
+  font-size: 3em !important;
  }
 
  .bkground{
   background-color: rgba(255,255,255,1);
+  border-radius: 10px;
  }
 
-
 .projecth1{
-  background-color: rgba(255,255,255,.7);
+  background-color: rgba(255,255,255,.9);
+  padding-bottom: 5%;
+  margin-bottom: -5%;
+  border-radius: 10px;
+  text-align: center;
 }
 .prodshow{
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(255,255,255,1);
 }
  body{
   background-image: url("weed.jpg");
@@ -49,12 +90,6 @@
   background-color: rgba(0,0,0,0);
 }
 
-.navbar-brand{
-  width: 10%;
-  height: auto;
-  margin-right: -5%;
-}
-
 #tutname{
   text-align: center;
   margin-bottom:42%;
@@ -63,7 +98,6 @@
   word-wrap: normal;
   overflow: scroll;
 }
-
 .carousel-inner > .item {
     -webkit-transition: 0.6s ease-in-out left;
     -moz-transition: 0.6s ease-in-out left;
@@ -84,6 +118,18 @@
 
 .navbar{
   background-color: rgba(255,255,255,.8);
+}
+
+.btn{
+  font-family: 'Lato' !important;
+  background-color: #0099ff;
+  color:white !important;
+  /*font-size: 1.5em !important;*/
+}
+
+.btn:hover{
+  background-color: #0099ff;
+  color:#669933 !important;
 }
 
 h1 {

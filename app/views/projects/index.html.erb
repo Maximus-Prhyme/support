@@ -1,28 +1,24 @@
-<p id="notice"><%= notice %></p>
-
-<h1 class="projecth1 col-sm-4 col-sm-offset-4">Listing Projects</h1>
+<h1 class="projecth1 col-sm-8 col-sm-offset-2">
+Welcome to the BiotrackTHC tutorial page</h1>
+<br><br><br><br><br>
 
 <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody class="bkground">
+  <tbody class="bkground col-lg-8 col-lg-offset-2">
     <% @projects.each do |project| %>
       <tr>
-        <td><%= project.name %></td>
-        <td><%= link_to 'Show', project %></td>
+        <td class="col-sm-12">
+        <%=link_to project.name.upcase, project, :class => 'btn projname col-md-12' %>
+
+        </td>
         <td>
           <% if tech_signed_in? %>
-            <%= link_to 'Edit', edit_project_path(project) %>
+            <%= link_to 'Edit', edit_project_path(project), :class => 'btn' %>
           <%end%>
         </td>
         <td>
           <% if tech_signed_in? %>
-            <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn' %>
           <%end%>
         </td>
       </tr>
@@ -32,5 +28,6 @@
 
 <br>
 <% if tech_signed_in? %>
+
 <%= link_to 'New Project', new_project_path, :class=> "btn newprod" %>
 <%end%>

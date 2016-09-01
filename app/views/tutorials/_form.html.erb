@@ -1,4 +1,4 @@
-<div class="projecth1">
+<div class="projecth1 col-lg-8 col-lg-offset-2">
 <%= form_for([@project, @project.tutorials.build]) do |f| %>
   <%# if @tutorial.errors.any? %>
     <!-- <div id="error_explanation"> -->
@@ -18,7 +18,8 @@
   </div>
 
   <div class="field">
-  <%= f.file_field :picture %>
+  <%= f.label :picture %>
+  <%= f.file_field :picture, :class => 'col-sm-offset-5' %>
   </div>
   <div class="field">
     <%= f.label :description %><br>

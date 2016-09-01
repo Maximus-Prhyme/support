@@ -16,9 +16,10 @@
 <body>
 
 <nav class="navbar navbar-fixed-top">
-<%= link_to image_tag("biotrackthc.png", :class => "navbar-brand"), "/" %>
-<p class="navbar-text pull-right">
+<%= link_to image_tag("Biotracklogo.png", :class => "navbar-left"), "/" %>
 
+<p class="navbar-text pull-right">
+<%= link_to "Biotrack Support", "http://biotrack.com/support", :class => 'btn', :style => 'font-size: 1.2em' %>
     <% if tech_signed_in? %>
       Logged in as <strong><%= current_tech.email %></strong>.
       <%= link_to 'Edit profile', edit_tech_registration_path, :class => 'navbar-link' %> |
