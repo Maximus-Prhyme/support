@@ -9,17 +9,19 @@ Welcome to the BiotrackTHC tutorial page</h1>
     <% @projects.each do |project| %>
       <tr>
         <td class="col-sm-12">
-        <%=link_to project.name.upcase, project, :class => 'btn projname col-sm-12' %>
+        <%=link_to project.name.upcase, project, :class => 'btn projname col-md-12' %>
 
         </td>
-        <% if tech_signed_in? %>
-          <td>
+        <td>
+          <% if tech_signed_in? %>
             <%= link_to 'Edit', edit_project_path(project), :class => 'btn' %>
-          </td>
-          <td>
+          <%end%>
+        </td>
+        <td>
+          <% if tech_signed_in? %>
             <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn' %>
-          </td>
-        <%end%>
+          <%end%>
+        </td>
       </tr>
     <% end %>
   </tbody>
