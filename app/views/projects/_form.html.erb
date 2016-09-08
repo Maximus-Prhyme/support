@@ -15,7 +15,36 @@
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
-  </div>
+  </div><br>
+
+  <div class ="field">
+    <%= f.label :hardware %>
+    <%= f.check_box :hardware %>
+  </div><br>
+
+    <div class ="field">
+    <%= f.label :inventory %>
+    <%= f.check_box :inventory %>
+  </div><br>
+
+    <div class ="field">
+    <%= f.label :pos %>
+    <%= f.check_box :pos %>
+  </div><br>
+
+    <div class ="field">
+    <%= f.label :network %>
+    <%= f.check_box :network %>
+  </div><br>
+
+    <div class ="field">
+    <%= f.label :trace %>
+    <%= f.check_box :trace %>
+  </div><br>
+    <div class ="field">
+    <%= f.label :training %>
+    <%= f.check_box :training %>
+  </div><br>
   <%# @project.tutorials do |tutorial| %>
     <%# project.tutorial.step %>
   <%#end%>

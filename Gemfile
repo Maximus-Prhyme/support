@@ -11,6 +11,7 @@ gem 'better_errors'
 gem 'devise'
 gem 'carrierwave'
 gem 'fog'
+gem 'tzinfo-data'
 gem 'fog-aws'
 gem 'mini_magick'
 # Use SCSS for stylesheets
