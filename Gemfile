@@ -15,6 +15,7 @@ gem 'tzinfo-data'
 gem 'fog-aws'
 gem 'mini_magick'
 gem 'figaro'
+gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
