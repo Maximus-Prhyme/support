@@ -5,6 +5,7 @@ CarrierWave.configure do |config|                       # required
     :aws_secret_access_key => ENV['S3_SECRET'],
     :region                => ENV['S3_REGION']
                      # required
+                    # required
   }
   config.fog_directory  = 'biotrack'                          # required
 end

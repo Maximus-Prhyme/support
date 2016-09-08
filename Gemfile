@@ -14,6 +14,10 @@ gem 'fog'
 gem 'tzinfo-data'
 gem 'fog-aws'
 gem 'mini_magick'
+<<<<<<< HEAD
+=======
+gem 'figaro'
+>>>>>>> 74d2c9d76488cb102e5f5f2a5093fa1c474c1b6a
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
